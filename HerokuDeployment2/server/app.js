@@ -9,7 +9,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.get('/yeast', (req, res, next) => {
+app.get('/', (req, res, next) => {
   res.send(JSON.stringify(fixtures.yeast))
 })
 
